@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Helfi Pangestu Website</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Helfi Pangestu" />
+    <meta name="description" content="Helfi Pangestu Personal Website" />
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hpangestu_">
+    <meta name="twitter:title" content="Helfi Pangestu Website">
+    <meta name="twitter:description" content="Helfi Pangestu Personal Website">
+    <meta name="twitter:image" content="assets/images/social.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Helfi Pangestu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="your url website" />
+    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:description" content="Helfi Pangestu Personal Website" />
+    <meta property="og:site_name" content="Helfi Pangestu Personal Website" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+	
+	<!-- Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+	
+</head>
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <main class="main">
+	    <div class="container gutter-top">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+                            <g class="avatar__box">
+                                <image xlink:href="assets/img/Avatar-helfi.svg" height="100%" width="100%" />
+                            </g>
+                        </svg>
+						<div class="text-center">
+						    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Helfi</span> Pangestu</h3>
+							<div class="badge badge--light">Data Engineer</div>
+							
+							<!-- Social -->
+		                    <div class="social">
+		                        <a class="social__link" href="https://www.facebook.com/hellfip/"><i class="font-icon icon-facebook"></i></a>
+		                        <a class="social__link" href="https://www.instagram.com/tuanmudahelfi/"><i class="font-icon icon-instagram"></i></a>
+		                        <a class="social__link" href="https://www.linkedin.com/in/helfipangestu/"><i class="font-icon icon-linkedin2"></i></a>
+		                    </div>
+						</div>
+						
+						<div class="sidebar__info box-inner box-inner--rounded">
+		                    <ul class="contacts-block">
+					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+							        <i class="font-icon icon-calendar"></i>January 1997
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+							        <i class="font-icon icon-location"></i>Bekasi, Indonesia
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i>hellfipangestu@gmail.com</a>
+							    </li>
+					        </ul>
+							
+							<a class="btn" href="https://www.linkedin.com/in/helfipangestu/"><i class="font-icon icon-download"></i> Download CV</a>
+						</div>
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box shadow pb-0">
+					    <!-- Menu -->
+					    <div class="circle-menu">
+						    <div class="hamburger">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+						</div>
+						<div class="inner-menu js-menu js-tabs">
+						    <ul class="nav">
+                                <li class="nav__item"><a class="active" href="#about-tab">About</a></li>
+								<li class="nav__item"><a href="#resume-tab">Resume</a></li>
+                                <li class="nav__item"><a href="#portfolio-tab">Portfolio</a></li>
+                                <li class="nav__item"><a href="#blog-tab">Blog</a></li>
+                                <li class="nav__item"><a href="#contact-tab">Contact</a></li>
+                            </ul>
+						</div>
+
+			            <div class="content">
+						    <div id="about-tab" class="tabcontent active">
+					            <!-- ABOUT -->
+						        <div class="pb-0 pb-sm-2">
+		                            <h1 class="title title--h1 first-title title__separate">About Me</h1>
+						            <p>I'm Data Engineer from Jakarta, Indonesia, working in data pipeline and web development. I enjoy turning complex problems into simple, reliable and customer centric.</p>
+                                    <p>🔭 I’m currently working at one of the biggest ecommerce in Indonesia to built an datatech. Why ecommerce? Because of this fun fact 👇:</p>
+                                    <p>⚡ Fun fact: There is a wide range of innovations being explored in this industry. On the data engineer side, we must have critical thinking about how to make the data always streaming well, fast, with no downtime, and credible. So, we always improve our algorithm and infrastructure to be better and can process very big size data just in seconds.</p>
+                                    <p>🤔 So that: There is still plenty of room for growth, because the data is not stopped just that issue. There are many problems there like monitoring, logging, cost optimization, also alerting if there are incidents or anomalies in the data.</p>
+					            </div>
+						
+						        <!-- What -->
+						        <div class="box-inner pb-0">
+						            <h2 class="title title--h3">What I'm Doing</h2>
+							        <div class="row">
+							            <!-- Case Item -->
+							            <div class="col-12 col-lg-6">
+							                <div class="case-item box box__second">
+									            <img class="case-item__icon" src="assets/icons/icon-design.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Data Architecture</h3>
+										            <p class="case-item__caption">The most modern and high-quality data architect made at a professional level.</p>
+										        </div>	
+									        </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+							                <div class="case-item box box__second">
+									            <img class="case-item__icon" src="assets/icons/icon-dev.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Web Development</h3>
+										            <p class="case-item__caption">High-quality development of sites at the professional level.</p>
+										        </div>
+									        </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+								            <div class="case-item box box__second">
+								                <img class="case-item__icon" src="assets/icons/icon-app.svg" alt="" />
+										        <div>
+								                    <h3 class="title title--h5">Mobile Apps</h3>
+									                <p class="case-item__caption">Professional development of applications for iOS and Android.</p>
+										        </div>
+								            </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+								            <div class="case-item box box__second">
+									            <img class="case-item__icon" src="assets/icons/icon-creator.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Content Creator</h3>
+										            <p class="case-item__caption">I am a part time content creator in the field technology and startups.</p>
+										        </div>
+									        </div>
+								        </div>
+							        </div>	
+						        </div>
+						
+						        <!-- Testimonials -->
+						        <div class="box-inner box-inner--white">
+						            <h2 class="title title--h3">Testimonials</h2>
+						            <div class="swiper-container js-carousel-review">
+                                        <div class="swiper-wrapper">
+								            <!-- Item review -->
+                                            <div class="swiper-slide review-item">
+										        <svg class="avatar avatar--80" viewBox="0 0 84 84">
+                                                    <g class="avatar__hexagon">
+                                                        <image xlink:href="assets/img/Avatar-4.svg" height="100%" width="100%" />
+                                                    </g>
+                                                </svg>
+									            <h4 class="title title--h5">Mukti Ageng Wicaksono</h4>
+										        <p class="review-item__caption">he is so great 
+                                                    <br><br><b>Business Development at S-gala.com </b>
+                                                </p>
+									        </div>
+									
+									        <!-- Item review -->
+                                            <div class="swiper-slide review-item">
+										        <svg class="avatar avatar--80" viewBox="0 0 84 84">
+                                                    <g class="avatar__hexagon">
+                                                        <image xlink:href="assets/img/Avatar-3.svg" height="100%" width="100%" />
+                                                    </g>
+                                                </svg>
+									            <h4 class="title title--h5">Fauzan Hilmi</h4>
+										        <p class="review-item__caption">Helfi Pangestu is one of the best people I've ever worked with. He is always punctual, his knowledge is vast and extensive. Excellent and result driven. Works towards maximal customer satisfaction. He was always able to successfully complete any tasks with favorable results despite deadline pressure. Helfi Pangestu will find a way to weather any storm with a smile. He is an asset to any business.
+                                                    <br><br><b>Software Engineer at Doyobi Singapore</b>
+                                                </p>
+									        </div>
+									
+									        <!-- Item review -->
+                                            <div class="swiper-slide review-item">
+										        <svg class="avatar avatar--80" viewBox="0 0 84 84">
+                                                    <g class="avatar__hexagon">
+                                                        <image xlink:href="assets/img/Avatar-4.svg" height="100%" width="100%" />
+                                                    </g>
+                                                </svg>
+									            <h4 class="title title--h5">Sandy Nugraha</h4>
+										        <p class="review-item__caption">Helfi is a person with great skills and profound experience of business solutions. His abilities in leadership makes him to see solutions instead of problems. He showed a high level of ownership, motivating technical skills and was a valuable contributor to our projects. Dedicated and goal oriented strategist that cannot be overestimated. I certainly would recommend him as Data engineer.
+                                                    <br><br><b>Partnership Senior Manager at PT. Alto Network</b>
+                                                </p>
+									        </div>
+									
+									        <!-- Item review -->
+                                            <div class="swiper-slide review-item">
+										        <svg class="avatar avatar--80" viewBox="0 0 84 84">
+                                                    <g class="avatar__hexagon">
+                                                        <image xlink:href="assets/img/Avatar-5.svg" height="100%" width="100%" />
+                                                    </g>
+                                                </svg>
+									            <h4 class="title title--h5">Derry Indrawan</h4>
+										        <p class="review-item__caption">It was amazing to work together with Helfi, who was an excellent Software Engineer. Broad-minded Software Engineer - his exceptional work flow, skills, imagination and understanding of change requests made the project a dream. Helfi is extremely enthusiastic about his work which is infectious. His leadership and organizational skills have been invaluable to the company. The success achieved in his job required extensive knowledge and dedication. I have constantly felt Helfi was one of the most effective team mates I have ever had the privilege of working with.
+                                                    <br><br><b>Product Owner / Delivery Owner at PT. Prudential Indonesia</b>
+                                                </p>
+									        </div>
+                                        </div>
+    
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+						        </div>
+						
+						        <!-- Companies -->
+						        <div class="box-inner box-inner--rounded">
+						            <h2 class="title title--h3">Companies</h2>
+							
+							        <div class="swiper-container js-carousel-clients">
+                                        <div class="swiper-wrapper">
+								            <!-- Item client -->
+                                            <div class="swiper-slide">
+									            <a href="https://www.ad-ins.com/id/"><img src="assets/img/adins-logo.svg" alt="AdIns Logo" /></a>
+									        </div>
+									
+								            <!-- Item client -->
+                                            <div class="swiper-slide">
+									            <a href="https://bukalapak.com"><img src="assets/img/bukalapak-logo.svg" alt="Bukalapak Logo" /></a>
+									        </div>
+
+								            <!-- Item client -->
+                                            <div class="swiper-slide">
+									            <a href="https://www.futuready.com/"><img src="assets/img/futuready-logo.svg" alt="Futuready Logo" /></a>
+									        </div>
+
+								            <!-- Item client -->
+                                            <div class="swiper-slide">
+									            <a href="https://www.wirglobal.com/"><img src="assets/img/wir-group-logo.svg" alt="WIR Group Logo" /></a>
+									        </div>
+									
+								            <!-- Item client -->
+                                            <div class="swiper-slide">
+									            <a href="https://happypet.biz/indonesia/"><img src="assets/img/happy-pet-logo.svg" alt="Happy Pet Group Logo" /></a>
+									        </div>
+								        </div>
+								
+								        <div class="swiper-pagination"></div>
+							        </div>
+						        </div>
+						    </div>
+							
+							<!-- RESUME -->
+							<div id="resume-tab" class="tabcontent">
+						        <div class="pb-3">
+		                            <h1 class="title title--h1 first-title title__separate">Resume</h1>
+					            </div>
+						
+						        <!-- Experience -->
+						        <div class="pb-0">
+							        <div class="row">
+							            <div class="col-12 col-lg-6">
+								            <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-education.svg" alt="" /> Education</h2>
+									        <div class="timeline">
+									            <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">Brawijaya University</h5>
+										            <span class="timeline__period">2014 — 2018</span>
+										            <p class="timeline__description">Computer Science</p>
+										        </article>
+                                        
+										        <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">SMAN 8 Bekasi</h5>
+										            <span class="timeline__period">2012 — 2014</span>
+										            <p class="timeline__description">IPA</p>
+										        </article>
+									        </div>	
+								        </div>
+								
+							            <div class="col-12 col-lg-6">
+								            <h2 class="title title--h3"><img class="title-icon" src="assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+									        <div class="timeline">
+									            <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">Bukalapak</h5>
+										            <span class="timeline__period">Feb 2021 — Present</span>
+										            <p class="timeline__description">
+                                                        <b>Data Engineer</b>
+                                                        <br>- Successfully reduced the percentage of the number of incidents or data discrepancies per month starting from 40% to be 0%
+                                                        <br>- Successfully create an architecture for data pipeline which using Dataproc custom images which prevent job failure when installing dependencies library on cluster
+                                                        <br>- Successfully reduce the Datadog monitoring cost from $5k to $5 per month and implement it to all monitoring in Bukalapak services
+                                                        <br>Tools: Python, Java, Scala, Kubernetes, Kafka, Ansible, Vault, Datadog, AWX, Google Cloud Platform,
+                                                        <br>Microsoft Azure, HBase, Hadoop, Postgres, Mysql, MongoDB
+                                                    </p>
+										        </article>
+
+                                                <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">Futuready</h5>
+										            <span class="timeline__period">Nov 2018 — Feb 2021</span>
+										            <p class="timeline__description">
+                                                        <b>Software Engineer</b>
+                                                        <br>- Automate the issuance of insurance policies in the Grab Driver and Grab Customer projects
+                                                        <br>- Integrate payment gateway (OVO, Gopay, Bank Transfer, etc) using Midtrans, Faspay, and Direct API OVO for payment transaction in Futuready Products
+                                                        <br>- Build cms internal futuready and support making private javascript framework futuready using node js, koa js, MySQL DB, and serverless.
+                                                        <br>- Build a customer service dashboard using CodeIgniter Framework to support their priorities in calling customers, recording customer responses, and making decisions about customer interests in buying insurance policies.
+                                                        <br>- Manage and build contact center Futuready Thailand with twillio flex and integrating with Zoho CRM
+                                                        <br> Tools: NodeJS, Python, PHP, Docker, AWS Cognito, AWS SNS, AWS SQS, AWS Lambda, AWS EC2,
+                                                        <br> CodegIniter, Django, KoaJS, MYSQL, PostgreSQL, Zoho One, Twillio, Qontak
+                                                        <br>
+                                                        <b>Data Engineer</b>
+                                                        <br>- Build machine learning & business intelligent using R Language to integrated google big data, google analytics, oneBox customer support data, and futuready database in one portal management report.
+                                                        <br>- Build ETL Process using python from Futuready Data Lake to be Publication Sets for Analyst
+                                                        <br>Tools: R language, Python, NodeJS, Google Big Data, AWS S3, AWS Lambda, AWS CloudWatch, AWS EMR, AWS Athena, AWS Glue, AWS EC2, MySQL, PostgreSQL, Django
+                                                    </p>
+										        </article>
+                                        
+										        <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">WIR Group</h5>
+										            <span class="timeline__period">Jan 2018 — Nob 2018</span>
+										            <p class="timeline__description">
+                                                        <b>Backend Engineer</b>
+                                                        <br>As a Backend Developer, my responsibility is to provide Rest API for frontend developers. But, I involve in different roles and do some additional things, that are:
+                                                        <br>- Design and implementation of data storage solutions
+                                                        <br>- Lead engineers and code review for them
+                                                        <br>- Managing server for handling Incidents
+                                                        <br>- Build Continuous Integration and Continuous delivery
+                                                        <br>- Build Load Balancers
+                                                        <br>- Create Application Programming Interface using PHP Framework (CodeIgniter)
+                                                        <br>- Integration of user-facing elements developed by a front-end developer with server-side logic
+                                                        <br>App Store: https://play.google.com/store/apps/details?id=com.slingshot.minar&hl=in
+                                                        <br>Web: http://getminar.com/id/home-id/
+                                                        <br>Tools: PHP, CodeIgniter, VueJS, MySQL, Unity3D, JenKins.
+                                                    </p>
+										        </article>
+                                        
+										        <!-- Item -->
+									            <article class="timeline__item">
+									                <h5 class="title title--h5 timeline__title">PT. Adicipta Inovasi Teknologi</h5>
+										            <span class="timeline__period">May 2017 — Aug 2017</span>
+										            <p class="timeline__description">
+                                                        <b>Software Engineer</b>
+                                                        <br>Build a web application for multi finance companies using java spring framework that has been modified
+                                                        by PT. AdIns (Adicipta Invoasi Teknologi). The purpose of the web application development is to
+                                                        optimize the company's operations in developing internal products and solve problems that are still
+                                                        manual.
+                                                    </p>
+										        </article>
+									        </div>
+								        </div>
+							        </div>
+						        </div>
+						
+						        <!-- Skills -->
+						        <div class="box-inner box-inner--rounded">
+						            <div class="row">
+							            <div class="col-12 col-lg-6">
+						                    <h2 class="title title--h3">Design Skills</h2>
+									        <div class="box box__second">
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Web Design</span><span>80%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Web Design</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Adobe Premiere</span><span>75%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Adobe Premiere</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Photoshop</span><span>90%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Photoshop</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Illustrator</span><span>50%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Illustrator</span></div>
+                                                </div>
+
+                                                <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Blender</span><span>30%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Blender</span></div>
+                                                </div>
+									        </div>
+                                        </div>
+								
+							            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+						                    <h2 class="title title--h3">Coding Skills</h2>
+									        <div class="box box__second">
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Python</span><span>90%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Python</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Java</span><span>75%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Java</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Scala</span><span>70%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Scala</span></div>
+                                                </div>
+
+                                                <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Go</span><span>55%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Go</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>PHP</span><span>95%</span></div>
+											        </div>
+											        <div class="progress-text"><span>PHP</span></div>
+                                                </div>
+									        </div>
+                                        </div>
+							        </div>
+						        </div>
+							</div>
+							
+							<!-- PORTFOLIO -->
+							<div id="portfolio-tab" class="tabcontent">
+							    <div class="pb-2">
+		                            <h1 class="title title--h1 first-title title__separate">Portfolio</h1>
+					            </div>
+
+						        <!-- Gallery -->
+						        <div class="pb-0">
+							        <!-- Filter -->
+                                    <div class="select">
+			                            <span class="placeholder">Select category</span>
+			                            <ul class="filter">
+			                                <li class="filter__item">Category</li>
+				                            <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
+				                            <li class="filter__item" data-filter=".category-concept"><a class="filter__link" href="#filter">Concept</a></li>
+				                            <li class="filter__item" data-filter=".category-design"><a class="filter__link" href="#filter">Design</a></li>
+				                            <li class="filter__item" data-filter=".category-life"><a class="filter__link" href="#filter">Life</a></li>
+			                            </ul>
+			                            <input type="hidden" name="changemetoo"/>
+		                            </div>
+
+							        <div class="gallery-grid js-masonry js-filter-container">
+							            <div class="gutter-sizer"></div>
+							            <!-- TODO: Updated -->
+							        </div>
+						        </div>
+							</div>
+							
+							<!-- BLOG -->
+							<div id="blog-tab" class="tabcontent">
+							    <div class="pb-2">
+		                            <h1 class="title title--h1 first-title title__separate">Blog</h1>
+					            </div>
+
+						        <div class="news-grid pb-0">
+							        <!-- Post -->
+							        <article class="news-item box">
+							            <div class="news-item__image-wrap overlay overlay--45">
+								            <div class="news-item__date">Feb 25, 2020</div>
+									        <a class="news-item__link" href="https://medium.com/@helfipangestu12/aca-cloud-computing-certification-6f3ac3a4017"></a>
+								            <img class="cover lazyload" src="assets/img/blog-post-1.png" alt="" />
+								        </div>
+								        <div class="news-item__caption">
+								            <h2 class="title title--h4">ACA Cloud Computing Certification</h2>
+									        <p>How to become Alibaba Cloud Certified</p>
+								        </div>
+							        </article>
+
+							        <!-- Post -->
+							        <article class="news-item box">
+							            <div class="news-item__image-wrap overlay overlay--45">
+								            <div class="news-item__date">Nov 9, 2018</div>
+									        <a class="news-item__link" href="https://medium.com/@helfipangestu12/kami-adalah-pendobrak-e2da45ff9677"></a>
+								            <img class="cover lazyload" src="assets/img/blog-post-2.png" alt="" />
+								        </div>
+								        <div class="news-item__caption">
+								            <h2 class="title title--h4">Opini Untuk Generasi Y</h2>
+									        <p>Saya ingin menyampaikan opini saya terkait gen “Y” yang selalu membuat “heboh” ditahun-tahun ini.</p>
+								        </div>
+							        </article>
+						        </div>
+							</div>
+							
+							<!-- CONTACT -->
+							<div id="contact-tab" class="tabcontent">
+							    <div class="pb-2">
+		                            <h1 class="title title--h1 first-title title__separate">Contact</h1>
+					            </div>
+
+                                <p>Feel free to contact me! Please don't afraid to contact with me i swear i am not bite 🤣 
+                                    <br>Email: helfipangestu12@gmail.com
+                                    <br>Instagram: @tuanmudahelfi
+                                    <br>linkedIn: helfipangestu
+                                </p>
+                                <br>
+                                <!-- <div class="map" id="map"></div> -->
+						        <!-- <h2 class="title title--h3">Contact Form</h2>
+							
+						        <form id="contact-form" class="contact-form" data-toggle="validator">
+                                    <div class="row">
+				                        <div class="form-group col-12 col-md-6">
+									        <i class="font-icon icon-user"></i>
+                                            <input type="text" class="input input__icon form-control" id="nameContact" name="nameContact" placeholder="Full name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+								            <div class="help-block with-errors"></div>
+				                        </div>
+				                        <div class="form-group col-12 col-md-6">
+									        <i class="font-icon icon-envelope"></i>
+                                            <input type="email" class="input input__icon form-control" id="emailContact" name="emailContact" placeholder="Email address" required="required" autocomplete="on" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
+								            <div class="help-block with-errors"></div>
+				                        </div>
+				                        <div class="form-group col-12 col-md-12">
+                                            <textarea class="textarea form-control" id="messageContact" name="messageContact" placeholder="Your Message"  rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')"></textarea>
+								            <div class="help-block with-errors"></div>
+				                        </div>
+						            </div>
+							        <div class="row">
+				                        <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
+					                        <div id="validator-contact" class="hidden"></div>
+				                        </div>
+				                        <div class="col-12 col-md-6 order-1 order-md-2 text-right">
+					                        <button type="submit" class="btn"><i class="font-icon icon-send"></i> Send Message</button>
+				                        </div>
+			                        </div>
+		                        </form> -->
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">© 2019 Helfi Pangestu Personal Website</footer>
+		        </div>
+			</div>
+		</div>	
+    </main>
+
+    <div class="back-to-top"></div>
+
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"/>
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+             <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
+        </clipPath>		
+    </svg>
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    
+	<!-- Mapbox init -->
+	<!-- <script src="assets/js/mapbox.init.js"></script> -->
+</body>
+</html>
