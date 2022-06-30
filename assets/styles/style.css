@@ -2698,4 +2698,9 @@ button:focus {
   height: 100%;
 }
 
+.title-galery-link:hover {
+  color: #EF3139;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
